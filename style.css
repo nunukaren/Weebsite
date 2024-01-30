@@ -200,6 +200,8 @@ color: #1da1f2;
 }
 #houseIcon{
   font-size: 20px;
+  display: flex;
+  align-items: center;
   user-select: none;
 }
 .emphasis{
