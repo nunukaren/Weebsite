@@ -1,22 +1,117 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <title>Clothing</title>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Quicksand'> 
-  </head>
-  <body>
-    <p>noah aly presents</p>
-    <h2>code blue</h2>
-    <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV4Mzi1UGUcninfirnkF61-M_Tzsc21aZLhw&usqp=CAU>
-<img src=https://o.remove.bg/downloads/08cbda78-7b1d-4746-a4d4-de957ec99522/images-removebg-preview.png>
-<img src= https://o.remove.bg/downloads/f82cd082-8d80-404f-8bf6-1c1d0f49fafc/download-removebg-preview-removebg-preview.png>
-<div class ="MainNavDiv" id="MainNavDiv">
-  <div class="NavLeft">
-<div class="TitleCenter"></div>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>John Doe Laundromat</title>
+  <link rel="icon" href="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6470/6470426_sd.jpg" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- quick_sand_font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <!-- menu icon-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <!-- honk_font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="sideNav" id="sideNav">
+    <div class="sideNavCloseButton"> <span id="closeButton" class="material-symbols-outlined">
+      close
+      </span>
+    </div>
+<div class="sideNavLinks" id="sideNavLinks">
+  <div class="linkSection">
+  <a href="https://de3be956-b150-4f03-b282-71873abc0dc9-00-3sv1972hz2j0i.picard.replit.dev/"> <span id="houseIcon" class="material-symbols-outlined">
+    home
+    </span>Home</a>
+  </div>
+  <div class="linkSection" id="linkSection">
+  <a onclick="confirm('Link 1 works!'); console.log('link 1 clicked');"> <span id="houseIcon" class="material-symbols-outlined">
+      home
+      </span>Link 1</a>
+  </div>  
+  <div class="linkSection" id="linkSection">
+  <a onclick="confirm('Link 2 works!'); console.log('link 2 clicked');"> <span id="houseIcon" class="material-symbols-outlined">
+    home
+    </span>Link 2</a>
+  </div>  
+  <div class="linkSection" id="linkSection">
+  <a onclick="confirm('Link 3 works!'); console.log('link 3 clicked');"> <span id="houseIcon" class="material-symbols-outlined">
+    home
+    </span>Link 3</a>
+  </div>  
+  <div class="linkSection" id="linkSection">
+  <a href="https://www.youtube.com" target="_blank"> <span id="houseIcon" class="material-symbols-outlined">
+    home
+    </span>Youtube</a>
+  </div>  
+  <div class="linkSection" id="linkSection">
+  <a href="https://www.instagram.com" target="_blank"> <span id="houseIcon" class="material-symbols-outlined">
+    home
+    </span>Instagram</a>
+  </div>  
+  <div class="linkSection" id="linkSection">
+  <a href="https://www.twitter.com" target="_blank"> <span id="houseIcon" class="material-symbols-outlined">
+    home
+    </span>Twitter</a>
+  </div>  
 </div>
-</div>
+  </div>
+  <div class="body_no_side_nav" id="body_no_side_nav">
+  <div class="MainNavDiv" id="MainNavDiv">
+    <div class="NavLeft">
+      <span id="menuButton" class="material-symbols-outlined">
+        menu
+      </span>
+    </div>
+    <div class="TitleCenter">
+      <h1 class="latitle">John Doe's Laundromat</h1>
+    </div>
+    <div class="navRight">
+      <a onclick="confirm('Link 1 works!'); console.log('link 1 clicked');">link 1</a>
+      <a onclick="confirm('Link 2 works!'); console.log('link 2 clicked')">Link 2</a>
+      <a onclick="confirm('Link 3 works!'); console.log('link 3 clicked')">Link 3</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <h1 class="SMintro">John Doe's laundromats is one of the best ever!</h1>
+  <h1 class="SMintro">Get in touch with us!</h1>
+  <div class="socialMedia" id="socialMedia">
+    <div class="socialMediaCard endMediaCardLeft" id="socialMediaCard" onclick="openYT()">
+      <div class="youtube" id="youtube">
+        <h1>check out our <br>
+          <youtube> Youtube</youtube> <br> channel!
+        </h1>
+        <!-- <img class="youtubeIMG" id="youtubeIMG" src="images/youtubeLogo.png"> -->
+      </div>
+    </div>
+    <div class="socialMediaCard middleMediaCard" onclick="openIG()">
+      <div class="instagram" id="instagram">
+        <h1>check out our <br>
+          <instagram> Instagram </instagram> <br> account!
+        </h1>
+        <!--<img class="instagramIMG" id="instagramIMG" src="images/instagramLogo.png">-->
+      </div>
+    </div>
+    <div class="socialMediaCard endMediaCardRight" onclick="openX()">
+      <div class="twitter" id="twitter">
+        <h1>check out our <br>
+          <twitter> Twitter </twitter> <br> account!
+        </h1>
+        <!--<img class="instagramIMG" id="instagramIMG" src="images/instagramLogo.png">-->
+      </div>
+    </div>
+  </div>
+  <h1 class='emphasis' id="emphasis">Clean. Fresh. Soft.</h1>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </div>
 </body>
 
-  
-  </html>
+</html>
