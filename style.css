@@ -1,26 +1,214 @@
-html, body{
+html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  Background: black;
-}
-body p{
-  text-transform: uppercase;
-  color:aqua;
-  font-family: Quicksand;
-  text-align:center;
-  font-size: 50px;
-}
-body h2{
-  text-transform: uppercase;
-  color: aqua;
-  font-family: Quicksand;
-  text-align: center;
-  font-size: 40px;
+  Background: #77d6ee;
+  font-family: 'Quicksand';
+  overflow-y: auto; 
 }
 img{
   width: 300px;
   height: 300px;
+}
+.MainNavDiv{
+  position: sticky;
+  top: 0;
+  background-color: #77d6ee;
+  border-bottom: 1px solid black;
+  display: flex;
+  color: black;
+  font-family: 'Quicksand', sans-serif; /* Make sure to import the Quicksand font */
+  justify-content: space-between;
+  width: calc(100% - 126px);
+  padding: 14px 64px;
+  z-index: 1;
+  align-items: center;
+  height: 50px;
+
+}
+.TitleCenter{
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+}
+.navRight{
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+.navRight a{
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.4s;
+  color: #000000;
+}
+.navRight a:hover{
+  transform: translateY(-4px);
+}
+.menuButton{
+  color: black;
+}
+#menuButton{
+  color: black;
+  font-size: 30px;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#menuButton:hover{
+  transform: scale(90%);
+}
+
+.images{
+  justify-content: space-between;
+  display: flex;
+}
+.youtubeIMG{
+  height: 150px;
+}
+.instagramIMG{
+  height: 130px;
+  width: 200px;
+}
+.socialMedia img{
+  user-select: none;
+  user-zoom: none;
+}
+.socialMedia{
+  display: flex;
+  justify-content: space-around;
+  cursor: default;
+}
+.socialMediaCard{
+  height: 375px;
+  text-align: center;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  transition: 300ms;
+  background-color: white;
+}
+.socialMediaCard:hover{
+  transform: scale(90%);
+}
+.socialMediaCard:active{
+  transform: scale(110%);
+}
+.endMediaCardLeft{
+  border-radius: 24px 0px 0px 24px;
+}
+.endMediaCardRight{
+  border-radius: 0px 24px 24px 0px;
+}
+.middleMediaCard{
+  border-radius: 24px;
+}
+.centerX{
+  display: flex;
+  justify-content:center;
+}
+.SMintro{
+  text-align: center;
+  padding-bottom: 100px;
+}
+youtube{
+  background: linear-gradient(45deg,  #ff0000 20%, #cc0f0f 40%, #ae1313 60%, #9a2828 80%, 	#710e0e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+instagram{
+  background: linear-gradient(45deg,  #feda75 5%, #fa7e1e 40%, #d62976 50%, #962fbf 60%, 	#4f5bd5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+twitter{
+color: #1da1f2;
+}
+.sideNav{
+  top: 0;
+  width: 20%;
+  position: fixed;
+  left: -700px;
+  z-index: 2;
+  height: 100%;
+  background: #24addb;
+ /* border-radius: 0px 0px 18px 0px; */
+}
+.sideNavShow{
+   animation: sideNavAppearance 0.6s ease forwards; 
+}
+@keyframes sideNavAppearance{
+  from{
+    left: -700px;
+  }
+  to{
+    left: 0px;
+  }
+}
+@keyframes sideNavClose{
+  from{
+    left: 0px;
+  }
+  to{
+    left: -700px;
+  }
+}
+.sideNavLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sideNavLinks a{
+  text-decoration: none;
+  color: black;
+  font-size: 40px; 
+  z-index: 1;
+  display: inline-block;
+}
+.sideNavLinks a:hover{
+  cursor:pointer;
+}
+.linkSection{
+  padding-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+#closeButton{
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+  user-select: none;
+}
+.sideNavCloseButton{
+  text-align: right;
+}
+.sideNavClose{
+  animation: sideNavClose 0.6s ease backwards;
+}
+#houseIcon{
+  font-size: 30px;
+  user-select: none;
+}
+.emphasis{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 50px;
+    background: linear-gradient(90.02deg, #ef3550 0.02%,#f48fb1 27.09%,  #7e57c2 51.04%, #2196f3 60.56%, #26c6da 68.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
