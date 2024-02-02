@@ -214,3 +214,72 @@ color: #1da1f2;
   background-clip: text;
   text-fill-color: transparent;
 }
+/* for smaller sized viewports DO NOT TOUCH*/
+
+/* do not display hyperlinks [a]*/
+@media (max-width: 1024px){
+  .navRight a{
+    display: none;
+  }
+}
+/* Change title size */
+@media (max-width: 752px){
+  .latitle{
+    font-size: 25px;
+  }
+}
+/* Change ratio between content and side nav */
+/* Change title size */
+@media (max-width: 590px){
+  .latitle{
+    font-size: 20px;
+  }
+  .sideNav{
+    width: 230px;
+  }
+}
+/* change social media cards positioning*/
+@media (max-width: 1000px){
+  .socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socialMediaCard{
+    margin-bottom: 20px;
+  }
+  .endMediaCardLeft{
+    border-radius: 24px;
+  }
+  .endMediaCardRight{
+    border-radius: 24px;
+  }
+}
+/* Change ratio between content and side nav */
+@media (max-width: 500px){
+  .sideNav{
+    width: 200px;
+  }
+}
+/* iphone 12 view*/
+@media (max-width: 400px){
+  .TitleCenter{
+    right: 50%;
+    top: 50%;
+    position: absolute;
+  }
+  .latitle{
+    white-space: normal;
+    overflow: visible;
+  }
+  .socialMediaCard:active{
+    transform: none;
+  }
+  .socialMediaCard:hover{
+    transform: none;
+  }
+  #closeButton:hover{
+    rotate: 0;
+  }
+}
